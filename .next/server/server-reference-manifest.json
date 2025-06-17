@@ -1,0 +1,180 @@
+{
+  "node": {
+    "404fdbacf3d0d114d30e2e30a63e57aa22379d8c11": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fpayment-actions.ts%22%2C%5B%7B%22id%22%3A%224081e6de15195ec708aae9608358611f9cb4e8ec50%22%2C%22exportedName%22%3A%22createOrder%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/checkout/page": "action-browser"
+      }
+    },
+    "4081e6de15195ec708aae9608358611f9cb4e8ec50": {
+      "workers": {
+        "app/checkout/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fpayment-actions.ts%22%2C%5B%7B%22id%22%3A%224081e6de15195ec708aae9608358611f9cb4e8ec50%22%2C%22exportedName%22%3A%22createOrder%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/checkout/page": "action-browser"
+      }
+    },
+    "007cf0ce2f8ef799bac62b54af1d6b1e6610e50461": {
+      "workers": {
+        "app/admin-login/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/dashboard/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/admin/orders/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin-login/page": "action-browser",
+        "app/admin/dashboard/page": "rsc",
+        "app/admin/orders/page": "rsc",
+        "app/admin/orders/[id]/page": "rsc"
+      }
+    },
+    "00b70544846b59d868eac5efe98553b644ed657b89": {
+      "workers": {
+        "app/admin-login/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/dashboard/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/admin/orders/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin-login/page": "action-browser",
+        "app/admin/dashboard/page": "rsc",
+        "app/admin/orders/page": "rsc",
+        "app/admin/orders/[id]/page": "rsc"
+      }
+    },
+    "00bca57b8653bc18b2d096ad61a64b442e545d09cb": {
+      "workers": {
+        "app/admin-login/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/dashboard/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/admin/orders/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin-login/page": "action-browser",
+        "app/admin/dashboard/page": "rsc",
+        "app/admin/orders/page": "rsc",
+        "app/admin/orders/[id]/page": "rsc"
+      }
+    },
+    "401e13c4ca3b03c40f5dbb9da060644c19791f1b33": {
+      "workers": {
+        "app/admin-login/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/dashboard/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/admin/orders/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin-login/page": "action-browser",
+        "app/admin/dashboard/page": "rsc",
+        "app/admin/orders/page": "rsc",
+        "app/admin/orders/[id]/page": "rsc"
+      }
+    },
+    "40e691797b2783970e4c4c06ff3275ffdfb36ffef4": {
+      "workers": {
+        "app/admin-login/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/admin/dashboard/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/admin/orders/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/admin/orders/[id]/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Fauth-actions.ts%22%2C%5B%7B%22id%22%3A%22007cf0ce2f8ef799bac62b54af1d6b1e6610e50461%22%2C%22exportedName%22%3A%22getSession%22%7D%2C%7B%22id%22%3A%2200b70544846b59d868eac5efe98553b644ed657b89%22%2C%22exportedName%22%3A%22logout%22%7D%2C%7B%22id%22%3A%2200bca57b8653bc18b2d096ad61a64b442e545d09cb%22%2C%22exportedName%22%3A%22logoutAction%22%7D%2C%7B%22id%22%3A%22401e13c4ca3b03c40f5dbb9da060644c19791f1b33%22%2C%22exportedName%22%3A%22login%22%7D%2C%7B%22id%22%3A%2240e691797b2783970e4c4c06ff3275ffdfb36ffef4%22%2C%22exportedName%22%3A%22createAdminUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin-login/page": "action-browser",
+        "app/admin/dashboard/page": "rsc",
+        "app/admin/orders/page": "rsc",
+        "app/admin/orders/[id]/page": "rsc"
+      }
+    },
+    "002001cc6b3745460cc4afa7c36c045f22b741431f": {
+      "workers": {
+        "app/admin/orders/[id]/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Forder-actions.ts%22%2C%5B%7B%22id%22%3A%22002001cc6b3745460cc4afa7c36c045f22b741431f%22%2C%22exportedName%22%3A%22getOrderStats%22%7D%2C%7B%22id%22%3A%2260a91a6227e613e0237573f5833e824309e2e766b9%22%2C%22exportedName%22%3A%22updateOrderStatus%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/orders/[id]/page": "action-browser"
+      }
+    },
+    "60a91a6227e613e0237573f5833e824309e2e766b9": {
+      "workers": {
+        "app/admin/orders/[id]/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmariaclaudiamarracino%2FDocuments%2Fkuma-web%2Fsrc%2Fapp%2Factions%2Fserver%2Forder-actions.ts%22%2C%5B%7B%22id%22%3A%22002001cc6b3745460cc4afa7c36c045f22b741431f%22%2C%22exportedName%22%3A%22getOrderStats%22%7D%2C%7B%22id%22%3A%2260a91a6227e613e0237573f5833e824309e2e766b9%22%2C%22exportedName%22%3A%22updateOrderStatus%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/admin/orders/[id]/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "7j32C679acG9zjXtHTgpS44f2ZLbflHTI0OluJLe3b4="
+}

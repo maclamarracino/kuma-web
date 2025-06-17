@@ -1,0 +1,149 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(cuid())
+  email     String    @unique
+  name      String?
+  password  String
+  role      String    @default("USER")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  sessions  Session[]
+  orders    Order[]
+
+  @@map("users")
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  userId    String
+  expires   DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([token])
+  @@map("sessions")
+}
+
+model Product {
+  id          String        @id @default(cuid())
+  name        String
+  slug        String        @unique
+  description String?       @db.Text
+  price       Decimal       @db.Decimal(10, 2)
+  imageUrl    String?
+  stock       Int           @default(0)
+  featured    Boolean       @default(false)
+  categoryId  String
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  category    Category      @relation(fields: [categoryId], references: [id])
+  orderItems  OrderItem[]
+  images      ProductImage[]
+
+  @@map("products")
+}
+
+model ProductImage {
+  id        String   @id @default(cuid())
+  productId String
+  url       String
+  alt       String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@map("product_images")
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String?   @db.Text
+  imageUrl    String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  products    Product[]
+
+  @@map("categories")
+}
+
+model Order {
+  id                    String      @id @default(cuid())
+  userId                String?
+  customerName          String
+  customerEmail         String
+  customerPhone         String?
+  shippingAddress       String?
+  shippingCity          String?
+  shippingPostalCode    String?
+  notes                 String?     @db.Text
+  status                String      @default("PENDING")
+  total                 Decimal     @db.Decimal(10, 2)
+  paymentPreferenceId   String?
+  paymentId             String?
+  paymentMethod         String?
+  paymentStatus         String?
+  createdAt             DateTime    @default(now())
+  updatedAt             DateTime    @updatedAt
+  user                  User?       @relation(fields: [userId], references: [id])
+  items                 OrderItem[]
+  shipping              Shipping?
+
+  @@map("orders")
+}
+
+model OrderItem {
+  id        String   @id @default(cuid())
+  orderId   String
+  productId String
+  title     String
+  quantity  Int
+  unitPrice Decimal  @db.Decimal(10, 2)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product   Product  @relation(fields: [productId], references: [id])
+
+  @@map("order_items")
+}
+
+model Shipping {
+  id                String          @id @default(cuid())
+  orderId           String          @unique
+  provider          String          @default("OCA")
+  trackingNumber    String?
+  status            String          @default("PENDING")
+  cost              Decimal         @db.Decimal(10, 2)
+  estimatedDelivery DateTime?
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+  order             Order           @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  events            ShippingEvent[]
+
+  @@map("shipping")
+}
+
+model ShippingEvent {
+  id          String   @id @default(cuid())
+  shippingId  String
+  status      String
+  location    String?
+  description String?  @db.Text
+  timestamp   DateTime @default(now())
+  shipping    Shipping @relation(fields: [shippingId], references: [id], onDelete: Cascade)
+
+  @@map("shipping_events")
+}
+
