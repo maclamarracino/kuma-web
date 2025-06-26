@@ -1,11 +1,8 @@
 {
   "/api/categories/route": "app/api/categories/route.js",
-  "/page": "app/page.js",
-  "/carrito/page": "app/carrito/page.js",
-  "/checkout/page": "app/checkout/page.js",
   "/admin-login/page": "app/admin-login/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
   "/admin/dashboard/page": "app/admin/dashboard/page.js",
-  "/admin/orders/page": "app/admin/orders/page.js",
-  "/admin/orders/[id]/page": "app/admin/orders/[id]/page.js"
+  "/admin/categories/[id]/page": "app/admin/categories/[id]/page.js",
+  "/admin/categories/page": "app/admin/categories/page.js"
 }

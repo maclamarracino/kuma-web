@@ -72,7 +72,7 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        serif: ["var(--font-playfair)"],
+        serif: ["var(--font-playfair)", "serif"],
         sans: ["var(--font-poppins)"],
       },
     },

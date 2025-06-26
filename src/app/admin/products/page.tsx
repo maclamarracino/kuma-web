@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { prisma } from "@/src/lib/prisma"
-import { Button } from "@/src/components/ui/button"
+import Link from "next/link";
+import { prisma } from "@/src/lib/prisma";
+import { Button } from "@/src/components/ui/button";
 import {
   Table,
   TableBody,
@@ -8,8 +8,9 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/src/components/ui/table"
-import { DeleteProductButton } from "./delete-button"
+} from "@/src/components/ui/table";
+import { DeleteProductButton } from "./delete-button";
+import { StarIcon } from "lucide-react";
 
 export default async function ProductsPage() {
   try {
@@ -27,8 +28,8 @@ export default async function ProductsPage() {
       })
     ).map((product) => ({
       ...product,
-      price: product.price.toNumber(), // <- 🔧 convierte Decimal a number
-    }))
+      price: product.price.toNumber(),
+    }));
 
     return (
       <div>
@@ -48,6 +49,7 @@ export default async function ProductsPage() {
                 <TableHead>Precio</TableHead>
                 <TableHead>Stock</TableHead>
                 <TableHead>Categoría</TableHead>
+                <TableHead>Destacado</TableHead>
                 <TableHead>Acciones</TableHead>
               </TableRow>
             </TableHeader>
@@ -72,6 +74,16 @@ export default async function ProductsPage() {
                   <TableCell>{product.stock}</TableCell>
                   <TableCell>{product.category?.name || "Sin categoría"}</TableCell>
                   <TableCell>
+                    {product.featured ? (
+                    <div className="inline-flex items-center text-sm font-medium text-yellow-600">
+                      <StarIcon className="w-4 h-4 text-yellow-500" />
+                      Destacado
+                        </div>
+                    ) : (
+                      "-"
+                    )}
+                  </TableCell>
+                  <TableCell>
                     <div className="flex space-x-2">
                       <Link href={`/admin/products/${product.id}`}>
                         <Button variant="outline" size="sm">
@@ -86,7 +98,7 @@ export default async function ProductsPage() {
 
               {products.length === 0 && (
                 <TableRow>
-                  <TableCell colSpan={6} className="text-center py-8 text-gray-500">
+                  <TableCell colSpan={7} className="text-center py-8 text-gray-500">
                     No hay productos. Crea tu primer producto.
                   </TableCell>
                 </TableRow>
@@ -95,9 +107,9 @@ export default async function ProductsPage() {
           </Table>
         </div>
       </div>
-    )
+    );
   } catch (error) {
-    console.error("Error al cargar productos:", error)
+    console.error("Error al cargar productos:", error);
     return (
       <div>
         <div className="flex justify-between items-center mb-6">
@@ -114,9 +126,10 @@ export default async function ProductsPage() {
           <p className="text-sm text-gray-500">{(error as Error).message}</p>
         </div>
       </div>
-    )
+    );
   }
 }
+
 
 
 

@@ -33,8 +33,8 @@ export default async function ProductsPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((product) => (
             <Link
-              key={product.id}
-              href={`/productos/${product.id}`}
+              key={product.slug}
+              href={`/productos/${product.slug}`}
               className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <div className="aspect-square relative bg-gray-100">

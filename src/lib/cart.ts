@@ -21,10 +21,10 @@ export const useCart = create<CartStore>()(
       
       addItem: (product: Product, quantity = 1) => {
         const { items } = get();
-        const existingItem = items.find(item => item.id === product.id);
+        const existingItem = items.find(item => item.id === product.slug);
         
         if (existingItem) {
-          return get().updateQuantity(product.id, existingItem.quantity + quantity);
+          return get().updateQuantity(product.slug, existingItem.quantity + quantity);
         }
         
         set({ items: [...items, { ...product, quantity }] });

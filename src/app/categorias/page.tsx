@@ -1,69 +1,83 @@
 import { prisma } from "@/src/lib/prisma"
-import { notFound } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/src/components/ui/button"
 
-interface CategoryPageProps {
-  params: {
-    id: string
+// 👉 SEO metadata para /categorias
+export async function generateMetadata() {
+  return {
+    title: "Categorías | Kuma Montessori",
+    description: "Descubrí nuestras categorías de productos Montessori para bebés y niños.",
+    alternates: {
+      canonical: "https://kumamontessori.com/categorias",
+    },
+    openGraph: {
+      title: "Categorías | Kuma Montessori",
+      description: "Explorá nuestras categorías Montessori y encontrá juguetes, materiales y accesorios ideales.",
+      url: "https://kumamontessori.com/categorias",
+      type: "website",
+      images: [
+        {
+          url: "https://kumamontessori.com/og-image.jpg",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Categorías | Kuma Montessori",
+      description: "Explorá nuestras categorías Montessori y encontrá juguetes, materiales y accesorios ideales.",
+      images: ["https://kumamontessori.com/og-image.jpg"],
+    },
   }
 }
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
-  const category = await prisma.category.findUnique({
-    where: { id: params.id },
-  })
-
-  if (!category) return notFound()
-
-  const products = await prisma.product.findMany({
-    where: { categoryId: category.id },
-    include: {
-      images: {
-        take: 1,
-      },
-    },
+export default async function CategoryListPage() {
+  const categories = await prisma.category.findMany({
     orderBy: {
-      createdAt: "desc",
+      name: "asc",
     },
   })
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6 text-center">{category.name}</h1>
-      <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">{category.description}</p>
+    <div className="max-w-7xl mx-auto px-4 py-12 font-serif text-[#365A5D]">
+      <h1 className="text-4xl font-bold mb-8 text-center">Categorías</h1>
 
-      {products.length === 0 ? (
-        <div className="text-center text-gray-500">No hay productos en esta categoría.</div>
+      {categories.length === 0 ? (
+        <div className="text-center text-gray-500">No se encontraron categorías.</div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {products.map((product) => (
-            <div key={product.id} className="border rounded-lg p-4 hover:shadow-md transition-shadow">
-              {product.images?.[0]?.url ? (
-                <Image
-                  src={product.images[0].url}
-                  alt={product.images[0].alt || product.name}
-                  width={300}
-                  height={200}
-                  className="w-full h-48 object-cover rounded"
-                />
-              ) : (
-                <div className="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500 rounded">
-                  Sin imagen
-                </div>
-              )}
-              <h2 className="text-lg font-semibold mt-4">{product.name}</h2>
-              <p className="text-sm text-gray-600 mb-2">${product.price.toFixed(2)}</p>
-              <Link href={`/productos/${product.id}`}>
-                <Button variant="outline" className="w-full">Ver Detalles</Button>
-              </Link>
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {categories.map((category) => (
+            <Link
+              key={category.slug}
+              href={`/categorias/${category.slug}`}
+              className="group bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow"
+            >
+              <div className="aspect-[4/3] bg-[#F3F3F3] relative">
+                {category.imageUrl ? (
+                  <Image
+                    src={category.imageUrl}
+                    alt={category.name}
+                    fill
+                    className="object-cover w-full h-full"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-gray-400">
+                    Sin imagen
+                  </div>
+                )}
+              </div>
+              <div className="p-4">
+                <h2 className="text-xl font-semibold group-hover:text-[#D9B84A] transition-colors">
+                  {category.name}
+                </h2>
+                {category.description && (
+                  <p className="text-sm text-[#666] line-clamp-2">{category.description}</p>
+                )}
+              </div>
+            </Link>
           ))}
         </div>
       )}
     </div>
   )
 }
-
-

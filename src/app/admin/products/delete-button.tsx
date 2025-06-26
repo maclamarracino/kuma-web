@@ -10,7 +10,6 @@ interface DeleteProductButtonProps {
 
 export function DeleteProductButton({ productId }: DeleteProductButtonProps) {
   const [isDeleting, setIsDeleting] = useState(false)
-  const [showConfirm, setShowConfirm] = useState(false)
 
   async function handleDelete() {
     if (!confirm("¿Estás seguro de que deseas eliminar este producto? Esta acción no se puede deshacer.")) {
@@ -20,8 +19,13 @@ export function DeleteProductButton({ productId }: DeleteProductButtonProps) {
     setIsDeleting(true)
 
     try {
-      await deleteProduct(productId)
-      // La página se recargará automáticamente debido a revalidatePath en la acción
+      const result = await deleteProduct(productId)
+      if (result?.error) {
+        alert(result.error)
+      } else {
+        // Recargar la página para mostrar los cambios
+        window.location.reload()
+      }
     } catch (error) {
       console.error("Error al eliminar:", error)
       alert("Error al eliminar el producto")
@@ -31,10 +35,11 @@ export function DeleteProductButton({ productId }: DeleteProductButtonProps) {
   }
 
   return (
-    <Button size="sm" onClick={handleDelete} disabled={isDeleting}>
+    <Button variant="destructive" size="sm" onClick={handleDelete} disabled={isDeleting}>
       {isDeleting ? "Eliminando..." : "Eliminar"}
     </Button>
   )
 }
+
 
 
